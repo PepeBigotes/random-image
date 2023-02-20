@@ -9,17 +9,18 @@
     <img id="random-image" src="" alt="random image">
     <script>
         fetch('/images-list.json')
-            .then(response => response.json())
-            .then(images => {
-                const randomIndex = Math.floor(Math.random() * images.length);
-                const randomImage = images[randomIndex];
-                const img = document.getElementById('random-image');
-                img.src = randomImage;
-            })
-            .catch(error => {
-                console.error('Error fetching images:', error);
-            });
-    </script>
+          .then(response => response.json())
+          .then(data => {
+            console.log(data.images);
+            const randomIndex = Math.floor(Math.random() * data.images.length);
+            const randomImage = data.images[randomIndex];
+            const img = document.getElementById('random-image');
+            img.src = randomImage;
+          })
+          .catch(error => {
+            console.error('Error fetching images:', error);
+          });
+      </script>
       
 </body>
 </html>
