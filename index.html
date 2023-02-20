@@ -2,12 +2,13 @@
 
 <html>
 <head>
+<script src="random-image.js"></script>
+
 <h1>Test page</h1>
-<img id="random-image" src="" alt="random image">
 </head>
 <body>
     <p>Hello world</p>
-    <script src="random-image.js"></script>
+    <img id="random-image" src="" alt="random image">
     <script>
         fetch('/api/random-image')
             .then(response => response.blob())
