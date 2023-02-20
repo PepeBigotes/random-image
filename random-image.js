@@ -6,20 +6,8 @@ const images = [
   
   const randomImage = images[Math.floor(Math.random() * images.length)];
 
-  const https = require('https');
-  
-  module.exports = (req, res) => {
-    https.get(randomImage, (response) => {
-      let data = '';
-      response.setEncoding('binary');
-      response.on('data', (chunk) => {
-        data += chunk;
-      });
-      response.on('end', () => {
-        const base64Image = Buffer.from(data, 'binary').toString('base64');
-        const dataUri = 'data:image/jpeg;base64,' + base64Image;
-        res.setHeader('Content-Type', 'text/plain');
-        res.status(200).send(dataUri);
-      });
-    });
+  export default (req, res) => {
+    res.setHeader('Content-Type', 'image/jpeg');
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    res.status(200).send(randomImage);
   };
