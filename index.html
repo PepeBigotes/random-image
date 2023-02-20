@@ -6,5 +6,14 @@
 </head>
 <body>
     <p>Hello world</p>
+    <img id="random-image" src="" alt="random image">
+    <script>
+        fetch('/api/random-image')
+          .then(response => {
+            const randomImage = document.getElementById('random-image');
+            randomImage.src = response.url;
+          })
+          .catch(error => console.error(error));
+      </script>
 </body>
 </html>
