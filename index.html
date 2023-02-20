@@ -8,15 +8,18 @@
     <p>Hello world</p>
     <img id="random-image" src="" alt="random image">
     <script>
-        fetch('random-image.js')
-          .then(response => {
-            const img = document.getElementById('random-image');
-            img.src = URL.createObjectURL(response.body);
-          })
-          .catch(error => {
-            console.error('Error fetching random image:', error);
-          });
-      </script>
+        fetch('/images-list.json')
+            .then(response => response.json())
+            .then(images => {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                const randomImage = images[randomIndex];
+                const img = document.getElementById('random-image');
+                img.src = randomImage;
+            })
+            .catch(error => {
+                console.error('Error fetching images:', error);
+            });
+    </script>
       
 </body>
 </html>
