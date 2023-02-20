@@ -7,5 +7,9 @@ const images = [
   module.exports = (req, res) => {
     const randomIndex = Math.floor(Math.random() * images.length);
     const randomImage = images[randomIndex];
-    res.status(200).send(randomImage);
+  
+    https.get(randomImage, (response) => {
+      res.setHeader('Content-Type', 'image/jpeg');
+      response.pipe(res);
+    });
   };
