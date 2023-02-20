@@ -3,17 +3,22 @@
 <html>
 <head>
 <h1>Test page</h1>
+<img id="random-image" src="" alt="random image">
 </head>
 <body>
     <p>Hello world</p>
-    <img id="random-image" src="" alt="random image">
+    <script src="random-image.js"></script>
     <script>
         fetch('/api/random-image')
-          .then(response => {
-            const randomImage = document.getElementById('random-image');
-            randomImage.src = response.url;
-          })
-          .catch(error => console.error(error));
-      </script>
+            .then(response => response.blob())
+            .then(blob => {
+                const objectURL = URL.createObjectURL(blob);
+                const img = document.getElementById('random-image');
+                img.src = objectURL;
+            })
+            .catch(error => {
+                console.error('Error fetching random image:', error);
+            });
+    </script>
 </body>
 </html>
