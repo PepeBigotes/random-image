@@ -1,23 +1,29 @@
 body {
+    font-size: 100%;
     font-family: 'Comic Neue', cursive;
     background-color: rgb(0, 255, 0);
     color: red;
   }
 head {
     font-family: 'Comic Neue', cursive;
-    font-size: 20px;
     background-color: rgb(0, 255, 0);
+}
+h1 {
+    background-color: blue;
+    color: red;
+    font-size: 3.5em;
 }
 code {
     color: blue;
 }
-  h2 {
-    font-family: 'Comic Neue', cursive;
+h2 {
     background-color: blue;
     color: red;
+    font-family: 'Comic Neue', cursive;
+    
     text-align: center;
   }
-  
-  p {
-    font-family: 'Comic Neue', cursive;
-  }
+img{
+    width: 100%;
+    object-fit: fill;
+}
