@@ -20,9 +20,15 @@ h2 {
     border-radius: 0.2em;
     
   }
-  code {
-    color: rgb(255, 255, 150);
+code {
+    color: rgb(150, 255, 150);
 }
+a {
+    color: aquamarine;
+  }
+a:visited {
+    color: aquamarine;
+  }
 img{
     width: 100%;
     object-fit: fill;
