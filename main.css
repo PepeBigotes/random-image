@@ -1,20 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 body {
     font-size: 100%;
     font-family: 'Fira Sans', sans-serif;
     background-color: rgb(50, 50, 50);
     color: white;
+
+    margin-right: 5%;
+    margin-left: 5%;
   }
 head {
-    font-family: 'Fira Sans', sans-serif;
     background-color: rgb(50, 50, 50);
 }
 h1 {
+    font-family: 'Pathway Gothic One', sans-serif;
     background-color: rgb(100, 100, 100);
     color: white;
     border-radius: 0.2em;
     font-size: 3.5em;
 }
 h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
     background-color: rgb(100, 100, 100);
     color: white;
     border-radius: 0.2em;
@@ -27,9 +34,14 @@ code {
 }
 .codeblock {
     font-family: 'Fira code', monospace;
+    font-size: 0.8em;
     background-color:rgb(25, 25, 25) ;
     color: rgb(150, 255, 150);
-    border-radius: 0.4em; 
+    border-radius: 0.4em;
+
+    margin-right: 15%;
+    margin-left: 5%;
+
 }
 a {
     color: aquamarine;
