@@ -4,19 +4,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 
 
-  <h1 align="center"><b> PepeBigotes/random-image </b></h1>
+  <h1 align="center"><b> PepeBigotes/</b>random-image </h1>
   </head>
   <body>
     <h2><b> What is this site? </b></h2>
     <p> This site renders a random image from a given list every time you load it.</p>
       You can render a random image from any of my <code>images-list.json</code>'s at <a href="https://pepebigotes-varceltest.vercel.app/api/random-image">https://pepebigotes-varceltest.vercel.app/api/random-image</a><br>
-      You can set that link as the source to an image from your own site or a GitHub <code>readme.md</code> file.</p>
+      You can set that link as the source to an image from your own site or a GitHub <code>readme.md</code> file like this:</p>
+      <div class="codeblock"><pre><code>
+        <b>MARKDOWN:</b>
+
+        ![Random image](https://pepebigotes-varceltest.vercel.app/api/random-image)
+
+
+        <b>HTML:</b>
+
+        &ltimg alt="Random image" src="https://pepebigotes-varceltest.vercel.app/api/random-image"&gt
+      </code></pre></div>
       <p>Here is an example image: (reload the page to see a diferent one)</p>
       
-      <div>
+      <div align="center">
       <img src="https://pepebigotes-varceltest.vercel.app/api/random-image" alt="random image">
       </div>
       </body>

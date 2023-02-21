@@ -1,11 +1,11 @@
 body {
     font-size: 100%;
-    font-family: 'Fira code', monospace;
+    font-family: 'Fira Sans', sans-serif;
     background-color: rgb(50, 50, 50);
     color: white;
   }
 head {
-    font-family: 'Fira code', monospace;
+    font-family: 'Fira Sans', sans-serif;
     background-color: rgb(50, 50, 50);
 }
 h1 {
@@ -21,7 +21,14 @@ h2 {
     
   }
 code {
+    font-family: 'Fira code', monospace;
     color: rgb(150, 255, 150);
+}
+.codeblock {
+    font-family: 'Fira code', monospace;
+    background-color:rgb(25, 25, 25) ;
+    color: rgb(150, 255, 150);
+    border-radius: 0.4em; 
 }
 a {
     color: aquamarine;
@@ -30,6 +37,6 @@ a:visited {
     color: aquamarine;
   }
 img{
-    width: 100%;
+    width: 80%;
     object-fit: fill;
 }
