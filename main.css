@@ -13,6 +13,36 @@ body {
 head {
     background-color: rgb(50, 50, 50);
 }
+
+/* NAVIGATION BAR */
+.topnav {
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: rgb(50, 50, 50);
+  overflow: hidden;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-size: 1.4em;
+  border-radius: 0.2em;
+}
+
+
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+
+
+
 h1 {
     font-family: 'Pathway Gothic One', sans-serif;
     background-color: rgb(100, 100, 100);
@@ -38,7 +68,7 @@ code {
     background-color:rgb(25, 25, 25) ;
     color: rgb(150, 255, 150);
     border-radius: 0.4em;
-
+    overflow: auto;
     margin-right: 15%;
     margin-left: 5%;
 
