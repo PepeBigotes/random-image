@@ -1,10 +1,7 @@
 const https = require('https');
 
-const images = [
-    "https://i.imgur.com/MrGY5EL.jpeg",
-    "https://i.imgur.com/Dp2qTdu.jpeg",
-    "https://i.imgur.com/AlBhvW8.jpeg"
-  ];
+const imagesList = require('../images-list.json');
+const images = imagesList.images;
   
   module.exports = (req, res) => {
     const randomIndex = Math.floor(Math.random() * images.length);
