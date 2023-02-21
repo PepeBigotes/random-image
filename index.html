@@ -5,22 +5,13 @@
 <h1>Test page</h1>
 </head>
 <body>
-    <p>Hello world</p>
-    <img id="random-image" src="" alt="random image">
-    <script>
-        fetch('/images-list.json')
-          .then(response => response.json())
-          .then(data => {
-            console.log(data.images);
-            const randomIndex = Math.floor(Math.random() * data.images.length);
-            const randomImage = data.images[randomIndex];
-            const img = document.getElementById('random-image');
-            img.src = randomImage;
-          })
-          .catch(error => {
-            console.error('Error fetching images:', error);
-          });
-      </script>
-      
+    <p>Fun fact:</p>
+    <p>
+      You can render a random image from my <code>images-list.json</code> at <a href="https://pepebigotes-varceltest.vercel.app/api/random-image">https://pepebigotes-varceltest.vercel.app/api/random-image</a>
+      You can even set that link as the <code>src</code> for your own page.
+      Here is a random image:
+    </p>
+    <img id="random-image" src="https://pepebigotes-varceltest.vercel.app/api/random-image" alt="random image">
+
 </body>
 </html>
