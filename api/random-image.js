@@ -1,6 +1,6 @@
 const https = require('https');
 
-const imagesList = require('lists/example-images-list.json');
+const imagesList = require('../lists/example-images-list.json');
 const images = imagesList.images;
   
   module.exports = (req, res) => {
