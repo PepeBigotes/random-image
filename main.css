@@ -1,28 +1,28 @@
 body {
     font-size: 100%;
-    font-family: 'Comic Neue', cursive;
-    background-color: rgb(0, 255, 0);
-    color: red;
+    font-family: 'Fira code', monospace;
+    background-color: rgb(50, 50, 50);
+    color: white;
   }
 head {
-    font-family: 'Comic Neue', cursive;
-    background-color: rgb(0, 255, 0);
+    font-family: 'Fira code', monospace;
+    background-color: rgb(50, 50, 50);
 }
 h1 {
-    background-color: blue;
-    color: red;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 0.2em;
     font-size: 3.5em;
 }
-code {
-    color: blue;
-}
 h2 {
-    background-color: blue;
-    color: red;
-    font-family: 'Comic Neue', cursive;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 0.2em;
     
-    text-align: center;
   }
+  code {
+    color: rgb(255, 255, 150);
+}
 img{
     width: 100%;
     object-fit: fill;
