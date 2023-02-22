@@ -36,34 +36,29 @@ head {
 }
 
 .topnav a.active {
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(75, 75, 75);
   color: white;
 }
 /*API LIST LINK BUTTONS*/
 .api-list-links {
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   background-color: rgb(50, 50, 50);
 
   overflow: hidden;
 }
 
 .api-list-links a {
+  background-color: rgb(60, 60, 60);
   color: white;
   text-align: center;
   padding: 1em 2em;
   text-decoration: none;
-  font-size: 1.4em;
-  border-radius: 0.2em;
+  font-size: 1.2em;
 }
 
 .api-list-links a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
-}
-
-.api-list-links a.active {
-  background-color: rgb(100, 100, 100);
-  color: white;
 }
 
 
