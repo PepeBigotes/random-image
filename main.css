@@ -30,7 +30,6 @@ head {
   border-radius: 0.2em;
 }
 
-
 .topnav a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
@@ -39,6 +38,48 @@ head {
 .topnav a.active {
   background-color: rgb(100, 100, 100);
   color: white;
+}
+/*API LIST LINK BUTTONS*/
+.api-list-links {
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: rgb(50, 50, 50);
+
+  overflow: hidden;
+}
+
+.api-list-links a {
+  color: white;
+  text-align: center;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-size: 1.4em;
+  border-radius: 0.2em;
+}
+
+.api-list-links a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.api-list-links a.active {
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+
+
+/*API LIST IMAGE ROWS*/
+.row {
+  display: flex;
+  padding: 1.5em;
+}
+.example-column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.example-column img {
+object-fit: fill;
+width: 100%;
+height: 100%;
 }
 
 
@@ -56,6 +97,14 @@ h2 {
     color: white;
     border-radius: 0.2em;
     font-size: 2em;
+    
+  }
+  h3 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    border-radius: 0.2em;
+    font-size: 1.4em;
     
   }
 code {
