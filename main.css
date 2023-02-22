@@ -45,7 +45,7 @@ a:visited {
 
 .topnav a.active {
   background-color: rgb(75, 75, 75);
-  color: white;
+  color: white !important;
 }
 /*API LIST LINK BUTTONS*/
 .api-list-links {
