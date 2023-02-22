@@ -13,9 +13,7 @@ body {
 head {
     background-color: rgb(50, 50, 50);
 }
-a:visited {
-  color: aquamarine;
-}
+
 /* NAVIGATION BAR */
 .topnav {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -32,12 +30,12 @@ a:visited {
   border-radius: 0.2em;
 }
 
+.topnav a:visited {
+ color: white;
+}
 .topnav a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
-}
-.topnav a:visited {
- color: white;
 }
 
 .topnav a.active {
@@ -61,12 +59,12 @@ a:visited {
   font-size: 1.2em;
 }
 
+.api-list-links a:visited{
+  color:white
+}
 .api-list-links a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
-}
-.api-list-links a:visited{
-  color:white
 }
 
 
@@ -128,7 +126,9 @@ code {
 a {
     color: aquamarine;
   }
-
+a:visited {
+    color: aquamarine;
+  }
 img{
     width: 80%;
     object-fit: fill;
