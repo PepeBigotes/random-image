@@ -13,7 +13,9 @@ body {
 head {
     background-color: rgb(50, 50, 50);
 }
-
+a:visited {
+  color: aquamarine;
+}
 /* NAVIGATION BAR */
 .topnav {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -126,9 +128,7 @@ code {
 a {
     color: aquamarine;
   }
-a:visited {
-    color: aquamarine;
-  }
+
 img{
     width: 80%;
     object-fit: fill;
