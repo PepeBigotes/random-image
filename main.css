@@ -13,7 +13,12 @@ body {
 head {
     background-color: rgb(50, 50, 50);
 }
-
+a {
+  color: aquamarine;
+}
+a:visited {
+  color: aquamarine;
+}
 /* NAVIGATION BAR */
 .topnav {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -35,7 +40,7 @@ head {
 }
 .topnav a:hover {
   background-color: rgb(255, 255, 255);
-  color: black;
+  color: black !important ;
 }
 
 .topnav a.active {
@@ -64,7 +69,7 @@ head {
 }
 .api-list-links a:hover {
   background-color: rgb(255, 255, 255);
-  color: black;
+  color: black !important;
 }
 
 
@@ -123,12 +128,7 @@ code {
     margin-left: 5%;
 
 }
-a {
-    color: aquamarine;
-  }
-a:visited {
-    color: aquamarine;
-  }
+
 img{
     width: 80%;
     object-fit: fill;
