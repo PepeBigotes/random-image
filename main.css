@@ -34,6 +34,9 @@ head {
   background-color: rgb(255, 255, 255);
   color: black;
 }
+.topnav a:visited {
+ color: white;
+}
 
 .topnav a.active {
   background-color: rgb(75, 75, 75);
@@ -59,6 +62,9 @@ head {
 .api-list-links a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
+}
+.api-list-links a:visited{
+  color:white
 }
 
 
