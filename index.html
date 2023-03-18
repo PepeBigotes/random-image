@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PepeBigotes Random Image GitHub</title>
+    <title>random-image by PepeBigotes</title>
 
-  <link rel="stylesheet" href="main.css">
-
-  <h1 align="center"><b> PepeBigotes/</b>random-image </h1>
-  </head>
-  <body>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_561218.png">
+</head>
+<body>
+    <h1 align="center"><b> PepeBigotes/</b>random-image</h1>
 
     <div class="topnav" align="center">
       <a class="active" href="./index.html">Home</a>
@@ -21,40 +22,62 @@
     <h2><b> What is this site? </b></h2>
     <div class="row">
       <div class="example-column">
-        <p style="font-size:1.3em ;"> This site renders a random image from a given list every time you load it.</p>
-        <p align="center">Try it yourself, Reload the page!</p>
-        <p style="font-size:1.1em ;">The cool thing about this site is that it's set up to offer the random image source in the URL itself though HTTPS</p>
-        <div class="codeblock"><pre><code>
-          <b>MARKDOWN:</b>
-  
-          ![Random image](https://random-image-pepebigotes.vercel.app/api/random-image)
-  
-  
-          <b>HTML:</b>
-  
-          &ltimg alt="Random image" src="https://random-image-pepebigotes.vercel.app/api/random-image"&gt
-        </code></pre></div>
-        <p>This API has some cool use cases:</p>
+        <div class="textblock">
+          <div>
+            <p align="center" style="font-size:1.3em ;"> This site renders a random image from a given list every time you load it.</p>
+            <p align="center" style="font-size: 1.3em;">Try it yourself, reload the page!</p>
+            <div align="center">
+              <button class="reloadpage" onClick="history.go(0);">
+                <span class="material-symbols-outlined">
+                  refresh
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="example-column">
         <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="random image">
       </div>
     </div>
-<h2>API uses:</h2>
-<!--A list here-->
+    
+      <p style="font-size:1.1em ;">But the main feature of his site is the API that lets you render a random image <span class="gray-text">(almost)</span> anywhere on the web.</p>
+      <p>You can use this API like this:</p>
+      <div class="codeblock"><pre><code>
+      <b>MARKDOWN:</b>
+      
+      ![Random image](https://random-image-pepebigotes.vercel.app/api/random-image)
+      
+      
+      <b>HTML:</b>
+      
+      &ltimg alt="Random image" src="https://random-image-pepebigotes.vercel.app/api/random-image"&gt
+    </code></pre></div>
+
+<h2>API uses</h2>
+<ul>
+  <li>
+    Add a random image to GitHub <code>readme.md</code> files, including the one from your profile: <br>
+    <!--Image--->
+  </li>
+  <li>
+    Add a random image to your web page.
+    <!--Image--->
+  </li>
+  <li>
+    Send randomized pictures over messaging services. <br>
+    <div class="gray-text">(This only worked on Gmail Spaces based on my tests)<!--, <a href="">more info here</a>)</div>-->
+  </li>
+</ul>
+
+<h2>Common issues</h2>
+<ul>
+  <li>The original image source can be slow or even fail.<br>
+      This is because this API works based on <b>image url's</b>, so it completly depends on the original image's hosting server</li>
+  <li>The images are not randomized on the most common messaging services <span class="gray-text">(WhatsApp, Discord, Telegram, ...)</span><br>
+      I assume these services cache the image and only access the API on the first time the image is loaded.<br>
+      <span class="gray-text">It works on Gmail Spaces Chats though</span></li>
+</ul>
+
       </body>
-      <!--  
-      You can render a random image from any of my <code>images-list.json</code>'s at <a href="https://random-image-pepebigotes.vercel.app/api/random-image">https://random-image-pepebigotes.vercel.app/api/random-image</a><br>
-        You can set that link as the source to an image from your own site or a GitHub <code>readme.md</code> file like this:</p>
-        <div class="codeblock"><pre><code>
-          <b>MARKDOWN:</b>
-  
-          ![Random image](https://random-image-pepebigotes.vercel.app/api/random-image)
-  
-  
-          <b>HTML:</b>
-  
-          &ltimg alt="Random image" src="https://random-image-pepebigotes.vercel.app/api/random-image"&gt
-        </code></pre></div>
-        -->
 </html>

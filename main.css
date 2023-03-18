@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
 body {
     font-size: 100%;
     font-family: 'Fira Sans', sans-serif;
@@ -10,9 +12,6 @@ body {
     margin-right: 5%;
     margin-left: 5%;
   }
-head {
-    background-color: rgb(50, 50, 50);
-}
 a {
   color: aquamarine;
 }
@@ -24,22 +23,23 @@ a:visited {
   font-family: 'Pathway Gothic One', sans-serif;
   background-color: rgb(50, 50, 50);
   overflow: hidden;
+  padding: 6px;
 }
 
 .topnav a {
   color: white;
   text-align: center;
-  padding: 1em 2em;
+  padding: 50px;
   text-decoration: none;
   font-size: 1.4em;
   border-radius: 0.2em;
 }
 
 .topnav a:visited {
- color: white;
+  color: white;
 }
 .topnav a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: black !important ;
 }
 
@@ -47,11 +47,29 @@ a:visited {
   background-color: rgb(75, 75, 75);
   color: white !important;
 }
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(50,50,50, 50); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
 /*API LIST LINK BUTTONS*/
 .api-list-links {
   font-family: 'Fira Sans', sans-serif;
   background-color: rgb(50, 50, 50);
-
+  
   overflow: hidden;
 }
 
@@ -81,28 +99,35 @@ a:visited {
 .example-column {
   flex: 33.33%;
   padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .example-column img {
 object-fit: fill;
-width: 100%;
-height: 100%;
+width: 90%;
+height: 90%;
 }
 
 
 
 h1 {
-    font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
     background-color: rgb(100, 100, 100);
     color: white;
     border-radius: 0.2em;
     font-size: 3.5em;
-}
-h2 {
+    padding:12px;
+  }
+  h2 {
     font-family: 'Pathway Gothic One', sans-serif;
     background-color: rgb(100, 100, 100);
     color: white;
     border-radius: 0.2em;
     font-size: 2em;
+    padding:6px;
     
   }
   h3 {
@@ -111,12 +136,19 @@ h2 {
     color: white;
     border-radius: 0.2em;
     font-size: 1.4em;
+    padding:6px;
     
   }
-code {
+  img{
+    border-radius: 0.2em;
+  }
+  li {
+    margin-top: 24px;
+  }
+  code {
     font-family: 'Fira code', monospace;
     color: rgb(150, 255, 150);
-}
+  }
 .codeblock {
     font-family: 'Fira code', monospace;
     font-size: 0.8em;
@@ -126,5 +158,60 @@ code {
     overflow: auto;
     margin-right: 15%;
     margin-left: 5%;
+    padding: 10px 10px 10px 10px;
 
+}
+.textblock {
+  background-color: rgb(75, 75, 75);
+  padding: 10px 30px 10px 30px;
+  border-radius: 0.2em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  object-fit: fill;
+  width: 60%;
+  height: 80%;
+}
+
+.gray-text {
+  color: #aaaaaa;
+  font-size: 0.8em;
+}
+
+.reloadpage {
+  align-self: center;
+  width: 3em;
+  height: 3em;
+  background-color: rgb(100, 100, 100);
+  border: rgb(100, 100, 100);
+  border-radius: 999px;
+  cursor: pointer;
+
+}
+.reloadpage:hover {
+  background-color: white;
+  border: white;
+  animation: rotate 400ms ease-in-out;
+}
+  .reloadpage:hover .material-symbols-outlined{
+    color: black;
+  }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.material-symbols-outlined {
+  color:white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 200,
+  'opsz' 48
 }
